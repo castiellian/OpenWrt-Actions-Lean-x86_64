@@ -17,7 +17,7 @@ on:
   release:
     types: [published]
 
- 点赞触发
+ #点赞触发
   watch:
     types: [started]
 
