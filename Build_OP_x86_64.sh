@@ -260,7 +260,6 @@ CONFIG_RPCBIND_RMTCALLS=y
 CONFIG_TARGET_IMAGES_GZIP=y
 CONFIG_TARGET_ROOTFS_PARTSIZE=300
 EOF
-
 # 
 # ========================固件定制部分结束========================
 # 
