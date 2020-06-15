@@ -95,7 +95,7 @@ jobs:
         [ -e files ] && mv files openwrt/files
         chmod +x $DIY_SH
         cd openwrt
-        ../$DIY_SH
+        $GITHUB_WORKSPACE/$DIY_SH
         make defconfig
     - name: 开启SSH远程连接
       uses: P3TERX/debugger-action@master
