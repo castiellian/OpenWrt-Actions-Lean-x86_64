@@ -263,6 +263,14 @@ CONFIG_RPCBIND_LIBWRAP=y
 CONFIG_RPCBIND_RMTCALLS=y
 CONFIG_TARGET_IMAGES_GZIP=y
 CONFIG_TARGET_ROOTFS_PARTSIZE=300
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun is not set
+# CONFIG_PACKAGE_luci-app-transmission is not set
+# CONFIG_PACKAGE_luci-app-qbittorrent is not set
+# CONFIG_PACKAGE_luci-app-xlnetacc is not set
+# CONFIG_PACKAGE_luci-app-zerotier is not set
+# CONFIG_PACKAGE_luci-app-v2ray-server is not set
+# CONFIG_PACKAGE_luci-app-pptp-server is not set
+# CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set
 EOF
 # 
 # ========================固件定制部分结束========================
