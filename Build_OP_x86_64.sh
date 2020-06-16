@@ -19,6 +19,7 @@ git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 git clone https://github.com/kang-mk/luci-app-smartinfo package/luci-app-smartinfo
+git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 
 
 
