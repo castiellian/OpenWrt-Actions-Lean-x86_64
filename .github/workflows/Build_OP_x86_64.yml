@@ -94,7 +94,7 @@ jobs:
       working-directory: ./openwrt
       run: |
         git clone https://github.com/Lienol/openwrt-package package/lienol
-        git clone https://github.com/kenzok8/litte package/litte
+        git clone https://github.com/kenzok8/small package/small
     
     - name: 创建自定义配置文件 - OpenWrt-x86_64
       run: |
