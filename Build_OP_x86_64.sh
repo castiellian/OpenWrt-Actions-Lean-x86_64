@@ -14,13 +14,8 @@ rm -rf package/lean/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
 # 添加第三方软件包
-git clone https://github.com/vernesong/OpenClash package/OpenClash
-git clone https://github.com/frainzy1477/luci-app-clash package/luci-app-clash
-git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
-git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
-git clone https://github.com/kang-mk/luci-app-smartinfo package/luci-app-smartinfo
 git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-git clone https://github.com/kenzok8/openwrt-packages/luci-app-ssr-plus package/luci-app-ssr-plus
+git clone https://github.com/kenzok8/openwrt-packages package/kenzok8
 git clone https://github.com/kenzok8/small package/small
 
 
