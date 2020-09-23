@@ -88,16 +88,23 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: 更新源
-      run: cd openwrt && ./scripts/feeds update -a && scripts/feeds update ifit
+      run: cd openwrt && ./scripts/feeds update -a
 
     - name: 安装源
-      run: cd openwrt && ./scripts/feeds install -a && scripts/feeds install luci-theme-ifit
+      run: cd openwrt && ./scripts/feeds install -a
 
     - name: 自定义安装源
       working-directory: ./openwrt
       run: |
         git clone https://github.com/Lienol/openwrt-package package/lienol
         git clone https://github.com/kenzok8/small package/small
+        git clone https://github.com/Aslin-Ameng/luci-theme-Light package/themes/luci-theme-Light
+        git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/themes/luci-theme-infinityfreedom
+        git clone https://github.com/garypang13/luci-theme-edge package/themes/luci-theme-edge
+        git clone https://github.com/jerrykuku/luci-theme-argon.git package/themes/luci-theme-argon
+        
+    - name: 安装主题
+      run: ./scripts/feeds update package/themes/luci-theme-Light && scripts/feeds update package/themes/luci-theme-infinityfreedom && scripts/feeds update package/themes/luci-theme-edge && scripts/feeds update package/themes/luci-theme-argon && scripts/feeds install package/themes/luci-theme-Light && scripts/feeds install package/themes/luci-theme-infinityfreedom && scripts/feeds install package/themes/luci-theme-edge && scripts/feeds install package/themes/luci-theme-argon
     
     - name: 创建自定义配置文件 - OpenWrt-x86_64
       run: |
