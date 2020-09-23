@@ -88,10 +88,10 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: 更新源
-      run: cd openwrt && ./scripts/feeds update -a
+      run: cd openwrt && ./scripts/feeds update -a && scripts/feeds update ifit
 
     - name: 安装源
-      run: cd openwrt && ./scripts/feeds install -a
+      run: cd openwrt && ./scripts/feeds install -a && scripts/feeds install luci-theme-ifit
 
     - name: 自定义安装源
       working-directory: ./openwrt
