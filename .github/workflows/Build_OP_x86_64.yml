@@ -104,7 +104,15 @@ jobs:
         git clone https://github.com/jerrykuku/luci-theme-argon.git package/themes/luci-theme-argon
         
     - name: 安装主题
-      run: ./scripts/feeds update package/themes/luci-theme-Light && scripts/feeds update package/themes/luci-theme-ifit && scripts/feeds update package/themes/luci-theme-edge && scripts/feeds update package/themes/luci-theme-argon && scripts/feeds install package/themes/luci-theme-Light && scripts/feeds install package/themes/luci-theme-ifit && scripts/feeds install package/themes/luci-theme-edge && scripts/feeds install package/themes/luci-theme-argon
+      run: |
+        ./scripts/feeds update package/themes/luci-theme-Light
+        ./scripts/feeds update package/themes/luci-theme-ifit
+        ./scripts/feeds update package/themes/luci-theme-edge
+        ./scripts/feeds update package/themes/luci-theme-argon
+        ./scripts/feeds install package/themes/luci-theme-Light
+        ./scripts/feeds install package/themes/luci-theme-ifit
+        ./scripts/feeds install package/themes/luci-theme-edge
+        ./scripts/feeds install package/themes/luci-theme-argon
     
     - name: 创建自定义配置文件 - OpenWrt-x86_64
       run: |
