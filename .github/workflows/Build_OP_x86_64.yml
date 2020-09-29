@@ -104,6 +104,7 @@ jobs:
         git clone https://github.com/jerrykuku/luci-theme-argon.git package/themes/luci-theme-argon
         
     - name: 安装主题
+      working-directory: ./openwrt
       run: |
         ./scripts/feeds update package/themes/luci-theme-Light
         ./scripts/feeds update package/themes/luci-theme-ifit
