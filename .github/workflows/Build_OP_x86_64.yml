@@ -99,8 +99,10 @@ jobs:
         git clone https://github.com/Lienol/openwrt-package package/lienol
         git clone https://github.com/kenzok8/small package/small
         git clone https://github.com/garypang13/luci-theme-edge.git package/themes/luci-theme-edge
+        git clone https://github.com/jerrykuku/lua-maxminddb.git package/small/lua-maxminddb
+        git clone https://github.com/jerrykuku/luci-app-vssr.git package/small/luci-app-vssr
         
-    - name: 安装主题
+    - name: 安装主题和HelloWorld
       working-directory: ./openwrt
       run: |
         ./scripts/feeds update package/themes/luci-theme-edge
