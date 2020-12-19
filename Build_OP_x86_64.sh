@@ -339,15 +339,6 @@ CONFIG_PACKAGE_luci-i18n-watchcat-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-wireguard-zh-cn=y
 CONFIG_PACKAGE_luci-proto-3g=y
 CONFIG_PACKAGE_luci-proto-ipv6=y
-CONFIG_IPV6=y
-CONFIG_PACKAGE_kmod-ipv6=y
-CONFIG_PACKAGE_kmod-ip6tables=y
-CONFIG_PACKAGE_kmod-ip6tables-extra=y
-CONFIG_PACKAGE_kmod-ipt-nat6=y
-CONFIG_PACKAGE_ip6tables=y
-CONFIG_PACKAGE_ip6tables-extra=y
-CONFIG_PACKAGE_ip6tables-mod-nat=y
-# CONFIG_PACKAGE_dnsmasq is not set
 CONFIG_PACKAGE_dnsmasq-dhcpv6=y
 CONFIG_PACKAGE_odhcp6c=y
 CONFIG_PACKAGE_odhcp6c_ext_prefix_class=0
@@ -427,7 +418,6 @@ CONFIG_V2RAY_DISABLE_NONE=y
 CONFIG_V2RAY_EXCLUDE_ASSETS=y
 CONFIG_V2RAY_EXCLUDE_V2CTL=y
 CONFIG_V2RAY_JSON_INTERNAL=y
-
 
 
 EOF
