@@ -39,7 +39,7 @@ on:
 #UPLOAD_FIRMWARE上传固件目录
 
 env:
-  REPO_URL: https://github.com/castiellian/lede.git
+  REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
   DIY_SH: Build_OP_x86_64.sh
   FREE_UP_DISK: false
